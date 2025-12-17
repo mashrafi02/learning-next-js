@@ -1,0 +1,15 @@
+- use searchParams prop when you need search params to fetch
+  data on the server
+  -- Data is fetched server-side before rendering
+  -- Makes the page dynamically rendered
+
+- use useSearchParams hook when Search params are for
+  client-side filtering only (data already loaded)
+  -- No server round-trip needed
+  -- Instant filtering in the browser
+
+- use new URLSearchParams(window.location.search) 
+  when Reading params in event handlers/callbacks without
+  causing re-renders
+  -- Doesn't trigger component re-render when URL changes
+  -- Good for one-time reads in callbacks

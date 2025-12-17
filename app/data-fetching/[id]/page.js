@@ -1,4 +1,4 @@
-import Comments from '@/app/components/Comments';
+import Comments from '@/app/_components/Comments';
 import getAllPosts from '@/lib/getAllPosts';
 import getAllPost from '@/lib/getPost';
 import getAllPostComments from '@/lib/getPostComments';
